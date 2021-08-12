@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management System</title>
+</head>
+<body>
+    <h1 style = text-align:center>Employee Management System</h1>
+    <h2 style="text-align: left">Add Department :</h2>
+    <form>
+    <form method="post" action="/add_department">
+        <table>
+            <tr>
+                <td>
+                    Department_Id:
+                </td>
+                <td>
+                    <input id = "dep_id" name = "dep_id" type = "number" min="1" max="5"  >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Department_Name:
+                </td>
+                <td>
+                    <input id = "dep_name" name = "dep_name" type = "text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Add Department">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+...................................................................................
+        <form method="post" action="/add_employee">
+            <h2 style="text-align: left">Add Employee :</h2>
+            <table>
+                <tr>
+                    <td>
+                        Employee_Id:
+                    </td>
+                    <td>
+                        <input id="emp_id" name="emp_id" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Employee_Name:
+                    </td>
+                    <td>
+                        <input id="emp_name" name="emp_name" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Employee_Age:
+                    </td>
+                    <td>
+                         <input id="emp_age" name="emp_age" type="number" min="18" max="62">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Department_Id:
+                    </td>
+                    <td>
+                        <input id = "emp_dep_id" name = "emp_dep_id" type = "number" min="1" max="5"  >
+                    </td>
+
+                <tr>
+                    <td>
+                        <input type="submit" value="Add Employee">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+
+......................................................................
+
+
+        <form method="post" action="/change_department">
+            <h2 style="text-align: left">Change Employee's Department :</h2>
+            <table>
+                <tr>
+                    <td>
+                        Employee_Id:
+                    </td>
+                    <td>
+                        <input id="old_emp_id" name="old_emp_id" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        New_Department_Id:
+                    </td>
+                    <td>
+                        <input id="new_dep_name" name="new_dep_name" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="change">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+.............................................................................................
+
+        <form method="post" action="/delete_employee">
+            <h2 style="text-align: left">Delete Employee :</h2>
+            <table>
+                <tr>
+                    <td>
+                        Employee_Id:
+                    </td>
+                    <td>
+                        <input id="del_emp_id" name="del_emp_id" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Delete">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </form>
+
+</body>
+</html>
